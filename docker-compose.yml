@@ -1,0 +1,18 @@
+---
+services:
+  food-classifier:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    image: biteid-food-classifier:latest
+    container_name: biteid-food-classifier
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/srv/models:ro
+      - ./app/sample_images:/srv/app/sample_images:ro
+      - ./evaluation_results:/srv/evaluation_results:ro
+    environment:
+      BITEID_MODEL_PATH: /srv/models/best_transfer_model.keras
+      STREAMLIT_SERVER_HEADLESS: "true"
+    restart: unless-stopped
