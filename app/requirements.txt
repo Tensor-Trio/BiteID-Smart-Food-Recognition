@@ -1,7 +1,12 @@
-streamlit>=1.30.0
 tensorflow>=2.15.0
-numpy>=1.24.0
-pandas>=2.0.0
+tensorflow-datasets>=4.9.0
+streamlit>=1.30.0
+fastapi>=0.100.0
+uvicorn>=0.22.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
-Pillow>=10.0.0importlib-resources>=6.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+importlib-resources>=6.0.0
+Pillow>=10.0.0
