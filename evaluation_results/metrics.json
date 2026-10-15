@@ -1,0 +1,36 @@
+{
+  "model_path": "C:\\Users\\HP\\Documents\\GitHub\\food-image-classification\\models\\best_transfer_model.keras",
+  "num_classes": 101,
+  "top1_accuracy": 0.7464554455445545,
+  "top5_accuracy": 0.9294257425742575,
+  "macro_f1": 0.7450413900927146,
+  "latency_ms_batch1": 169.33040000032634,
+  "high_confidence_failure_count": 483,
+  "top_confused_pairs": [
+    {
+      "true_class": "steak",
+      "pred_class": "filet_mignon",
+      "count": 43
+    },
+    {
+      "true_class": "filet_mignon",
+      "pred_class": "steak",
+      "count": 30
+    },
+    {
+      "true_class": "falafel",
+      "pred_class": "crab_cakes",
+      "count": 28
+    },
+    {
+      "true_class": "beef_tartare",
+      "pred_class": "tuna_tartare",
+      "count": 27
+    },
+    {
+      "true_class": "chocolate_cake",
+      "pred_class": "chocolate_mousse",
+      "count": 26
+    }
+  ]
+}

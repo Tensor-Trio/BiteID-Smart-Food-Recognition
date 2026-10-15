@@ -59,9 +59,7 @@ def collect_predictions(model, val_ds, failure_threshold=HIGH_CONFIDENCE_THRESHO
         y_proba.append(probs)
 
         if len(failure_images) < MAX_FAILURE_IMAGES:
-            failure_mask = (labels != predictions) & (
-                confidences > failure_threshold
-            )
+            failure_mask = (labels != predictions) & (confidences > failure_threshold)
             for local_index in np.where(failure_mask)[0]:
                 if len(failure_images) >= MAX_FAILURE_IMAGES:
                     break
