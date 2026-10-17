@@ -3,23 +3,10 @@
 Images in this folder are served by the sidebar **Use a bundled sample** view
 in `app/app.py`.
 
-| File | Source | Purpose |
-|------|--------|---------|
-| `apple_pie.jpg` | Food-101 validation split | Demo prediction |
-| `baklava.jpg` | Food-101 validation split | Demo prediction |
-| `bibimbap.jpg` | Food-101 validation split | Demo prediction |
-
 ## Known failure case
 
 The capstone problem statement requires at least three sample predictions and
-one known failure case. A failure cannot be selected honestly until the final
-model has been evaluated, because it depends on the trained weights.
-
-After training, run:
-
-```bash
-python src/evaluate.py --model models/best_transfer_model.keras --output evaluation_results
-```
+one known failure case.
 
 The evaluation engine saves high-confidence misclassification images under
 `evaluation_results/failures/images/`. The Streamlit app automatically exposes
